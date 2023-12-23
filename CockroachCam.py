@@ -15,9 +15,11 @@ while True: #Keep running forever
         print("Can't receive frame (stream end?). Exiting ...")
         break
     
+    ######
+    #placeholder functions
     cv2.putText(frame,'testing',(10,100), cv2.FONT_HERSHEY_SIMPLEX, 4,(255,0,0),2,cv2.LINE_AA)
-
     cv2.imshow('output', frame)
+    ######
 
     #Stop if any key is pressed
     keyCode = cv2.waitKey(10)
